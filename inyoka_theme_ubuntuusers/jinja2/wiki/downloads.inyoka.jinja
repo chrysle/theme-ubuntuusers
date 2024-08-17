@@ -1,0 +1,147 @@
+[[Inhaltsverzeichnis(2)]]
+
+
+Hier gibt es Ubuntu {{ ubuntu_version }} zum Herunterladen. Andere unterstützte Versionen sind unter [:Downloads:] zu finden. Über die Neu- und Besonderheiten dieser Version informiert der Artikel [:{{ codename }}:].
+
+{{ '{{{' }}#!vorlage Hinweis
+Ubuntu {{ ubuntu_version }} {{ codename }} ist eine {{ version_type }} Version, die {% if version_type == "Long Term Support" %}bis {{ eol_date }} (nur Ubuntu für Pakete aus den Quellen ''main'' und ''restricted'') bzw. {{ eol_date_derivatives }} (Xubuntu, Lubuntu, Kubuntu, Ubuntu Budgie, Ubuntu Mate){% else %}neun Monate{% endif %} mit Updates versorgt wird.
+}}}
+
+Wer sich unsicher ist, welche Ubuntu-Variante für ihn oder sie am besten geeignet ist, findet im Artikel [:Ubuntu/Derivate:Ubuntu Derivate] hilfreiche Infos.
+
+## inkl. manueller Lastverteilung auf verschiedene mirrors (nur ISO images)
+## torrents und SHA256SUMS direkt von releases.ubuntu.com (nur Ubuntu) oder cdimage.ubuntu.com (alle anderen)
+##
+## Ubuntu mirrors: https://launchpad.net/ubuntu/+cdmirrors
+## Kubuntu mirrors: https://www.kubuntu.org/getkubuntu/
+## Lubuntu mirrors: ?
+## Xubuntu mirrors: https://xubuntu.org/getxubuntu/
+
+= Download-Links =
+== Direktlink oder Torrent? ==
+Es gibt zwei Möglichkeiten, sich ein [:ISO-Image:ISO-Abbild] herunter zu laden:
+ * '''Torrent''' - Dies ist die empfohlenen Methode. Es kommt [:BitTorrent:] zum Einsatz, das heißt die Datei wird stückweise von verschiedenen Rechnern heruntergeladen. Man kann den Download jederzeit pausieren ohne von vorne beginnen zu müssen und es wird durch einen automatischen Vergleich der Prüfsumme sichergestellt, dass beim Herunterladen keine Fehler entstehen. Diese Prüfung muss man beim Direkt-Download selbst erledigen. Vor allem aber werden die Download-Server entlastet, da man von anderen Benutzern herunterlädt und weitere Benutzer später von einem selbst.
+ * '''Direktlink''' - Man lädt das Abbild direkt "am Stück" herunter, entweder direkt vom Hauptserver von Ubuntu oder besser von einem der [launchpad:ubuntu/+cdmirrors:offiziell empfohlenen Spiegelservern] {en}, um die Server von Ubuntu nicht zu überlasten. Am besten wählt man einen [wikipedia:Spiegelserver:] in der Nähe seines Wohnortes.
+
+== AMD64 x86-64 ==
+Die [:CPU-Architektur:64-Bit-Architektur] AMD64 bzw. x86-64 ist im Bereich der Heimcomputer, einschließlich Laptops häufigste Variante der [wikipedia:Prozessorarchitektur:Prozessorarchitekturen].
+
+{{ '{{{' }}#!vorlage Tabelle
+<rowclass="kopf">[[Bild(Wiki/Icons/ubuntu.png, 16)]] Ubuntu *
+[[Bild(Wiki/Icons/ubuntumate.png, 16)]] Ubuntu MATE
+[[Bild(Wiki/Icons/kubuntu.png, 16)]] Kubuntu
+[[Bild(Wiki/Icons/lubuntu.png, 16)]] Lubuntu
+[[Bild(Wiki/Icons/xubuntu.png, 16)]] Xubuntu
+[[Bild(Wiki/Icons/ubuntu-cinnamon.png, 16)]] Ubuntu Cinnamon
++++
+<:>[https://releases.ubuntu.com/{{ ubuntu_version }}/ubuntu-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
+<:>[https://cdimage.ubuntu.com/ubuntu-mate/releases/{{ ubuntu_version }}/release/ubuntu-mate-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
+<:>[https://cdimage.ubuntu.com/kubuntu/releases/{{ ubuntu_version }}/release/kubuntu-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
+<:>[https://cdimage.ubuntu.com/lubuntu/releases/{{ ubuntu_version }}/release/lubuntu-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
+<:>[https://cdimage.ubuntu.com/xubuntu/releases/{{ ubuntu_version }}/release/xubuntu-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
+<:>[https://cdimage.ubuntu.com/ubuntucinnamon/releases/{{ ubuntu_version }}/release/ubuntucinnamon-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
++++
+<:>[https://releases.ubuntu.com/{{ ubuntu_version }}/ubuntu-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ¹[[BR]][https://ftp.halifax.rwth-aachen.de/ubuntu-releases/{{ ubuntu_version }}/ubuntu-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ²[[BR]][https://mirror.easyname.at/ubuntu-releases/{{ ubuntu_version }}/ubuntu-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ³
+<:>[https://cdimage.ubuntu.com/ubuntu-mate/releases/{{ ubuntu_version }}/release/ubuntu-mate-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ¹[[BR]][https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntu-mate/releases/{{ ubuntu_version }}/release/ubuntu-mate-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ⁴[[BR]][[BR]]
+<:>[https://cdimage.ubuntu.com/kubuntu/releases/{{ ubuntu_version }}/release/kubuntu-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ¹[[BR]][https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/kubuntu/releases/{{ ubuntu_version }}/release/kubuntu-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ⁴[[BR]][[BR]]
+<:>[https://cdimage.ubuntu.com/lubuntu/releases/{{ ubuntu_version }}/release/lubuntu-{{ ubuntu_version }}-desktop-amd64.iso  Direktlink] ¹[[BR]][https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/lubuntu/releases/{{ ubuntu_version }}/release/lubuntu-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ⁴[[BR]][[BR]]
+<:>[https://cdimage.ubuntu.com/xubuntu/releases/{{ ubuntu_version }}/release/xubuntu-{{ ubuntu_version }}-desktop-amd64.iso  Direktlink] ¹[[BR]][https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/{{ ubuntu_version }}/release/xubuntu-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ⁴[[BR]][[BR]]
+<:>[https://cdimage.ubuntu.com/ubuntucinnamon/releases/{{ ubuntu_version }}/release/ubuntucinnamon-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ¹[[BR]][[BR]][[BR]]
++++
+<:>[https://releases.ubuntu.com/{{ ubuntu_version }}/SHA256SUMS Prüfsumme] ¹
+<:>[https://cdimage.ubuntu.com/ubuntu-mate/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+<:>[https://cdimage.ubuntu.com/kubuntu/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+<:>[https://cdimage.ubuntu.com/lubuntu/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+<:>[https://cdimage.ubuntu.com/xubuntu/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+<:>[https://cdimage.ubuntu.com/ubuntucinnamon/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+}}}
+## Ein Legacy  gibt es z.Zt. nicht.
+ 
+## [https://cdimage.ubuntu.com/releases/mantic/release/SHA256SUMS Prüfsumme]
+ 
+{{ '{{{' }}#!vorlage Tabelle
+<rowclass="kopf">[[Bild(Wiki/Icons/budgie.png, 16)]] Ubuntu Budgie
+[[Bild(Wiki/Icons/ubuntu-unity.png, 16)]] Ubuntu Unity
+[[Bild(Wiki/Icons/ubuntustudio.png, 16)]] Ubuntu Studio
+[[Bild(Wiki/Icons/edubuntu.png, 16)]] Edubuntu
+[[Bild(Wiki/Icons/ubuntu_server.png, 16)]] Server Edition
++++
+<:>[https://cdimage.ubuntu.com/ubuntu-budgie/releases/{{ ubuntu_version }}/release/ubuntu-budgie-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
+<:> [https://cdimage.ubuntu.com/ubuntu-unity/releases/{{ ubuntu_version }}/release/ubuntu-unity-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
+<:>[https://cdimage.ubuntu.com/ubuntustudio/releases/{{ ubuntu_version }}/release/ubuntustudio-{{ ubuntu_version }}-dvd-amd64.iso.torrent Torrent] ¹
+<:>[https://cdimage.ubuntu.com/edubuntu/releases/{{ ubuntu_version }}/release/edubuntu-{{ ubuntu_version }}-desktop-amd64.iso.torrent Torrent] ¹
+<:>[https://releases.ubuntu.com/{{ ubuntu_version }}/ubuntu-{{ ubuntu_version }}-live-server-amd64.iso.torrent Torrent] ¹
++++
+<:>[https://cdimage.ubuntu.com/ubuntu-budgie/releases/{{ ubuntu_version }}/release/ubuntu-budgie-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ¹[[BR]][https://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/ubuntu-budgie/releases/{{ ubuntu_version }}/release/ubuntu-budgie-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ⁴[[BR]][[BR]]
+<:>[https://cdimage.ubuntu.com/ubuntu-unity/releases/{{ ubuntu_version }}/release/ubuntu-unity-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ¹[[BR]][[BR]][[BR]]
+<:>[https://cdimage.ubuntu.com/ubuntustudio/releases/{{ ubuntu_version }}/release/ubuntustudio-{{ ubuntu_version }}-dvd-amd64.iso Direktlink] ¹[[BR]][[BR]][[BR]]
+<:>[https://cdimage.ubuntu.com/edubuntu/releases/{{ ubuntu_version }}/release/edubuntu-{{ ubuntu_version }}-desktop-amd64.iso Direktlink] ¹[[BR]][[BR]][[BR]]
+<:>[https://releases.ubuntu.com/{{ ubuntu_version }}/ubuntu-{{ ubuntu_version }}-live-server-amd64.iso Direktlink] ¹[[BR]][https://ftp.uni-erlangen.de/mirrors/ubuntu-releases/{{ ubuntu_version }}/ubuntu-{{ ubuntu_version }}-live-server-amd64.iso Direktlink] ²[[BR]][https://mirror.easyname.at/ubuntu-releases/{{ ubuntu_version }}/ubuntu-{{ ubuntu_version }}-live-server-amd64.iso Direktlink] ³
++++
+<:>[https://cdimage.ubuntu.com/ubuntu-budgie/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+<:>[https://cdimage.ubuntu.com/ubuntu-unity/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+<:>[https://cdimage.ubuntu.com/ubuntustudio/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+<:>[https://cdimage.ubuntu.com/edubuntu/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+<:>[https://releases.ubuntu.com/{{ ubuntu_version }}/SHA256SUMS Prüfsumme] ¹
+}}}
+
+
+¹ Hauptserver von [launchpad:ubuntu:ubuntu.com] {en}\\
+² Spiegelserver der [launchpad:ubuntu/+mirror/ftp.halifax.rwth-aachen.de-release:RWTH Aachen University] {en} - Standort: {de} Deutschland\\
+³ Spiegelserver der [launchpad:ubuntu/+mirror/mirror.easyname.at-release:Easyname GmbH] {en} - Standort: {at} Österreich\\
+⁴ Spiegelserver der [launchpad:ubuntu/+mirror/uk-mirror-service-cd:University Of Kent UK Mirror Service] {en} - Standort: {gb} Großbritannien
+
+== Raspberry Pi ==
+Die Ubuntu Desktop- und Server- Versionen laufen auf folgenden Modellen des [https://www.raspberrypi.com/ Raspberry Pi] {en} (für Desktop  mind. 4GB RAM u. 16 GB Speicherkapazität benötigt):
+ * Raspberry Pi 2, 3, 4, 5
+ * Raspberry Pi 400 
+ * Raspberry Pi CM4
+
+[https://cdimage.ubuntu.com/releases/{{ ubuntu_version }}/release/ubuntu-{{ ubuntu_version }}-preinstalled-desktop-arm64+raspi.img.xz Download der Desktop-Version] ¹, [https://cdimage.ubuntu.com/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+
+[https://cdimage.ubuntu.com/releases/{{ ubuntu_version }}/release/ubuntu-{{ ubuntu_version }}-preinstalled-server-arm64+raspi.img.xz Download der Server-Version] ¹, [https://cdimage.ubuntu.com/releases/{{ ubuntu_version }}/release/SHA256SUMS Prüfsumme] ¹
+
+Weitere Infos über welche Modelle genau unterstützt werden und Tipps zur Installation von Ubuntu auf dem Raspberry Pi findet man auf der {*} [https://ubuntu.com/raspberry-pi Ubuntu-Seite] {en}.
+
+== Weitere Architekturen ==
+Es gibt Ubuntu Images auch für eine Reihe weiterer [:CPU-Architektur: Prozessorarchitekturen]:
+ * [wikipedia:Arm-Architektur:ARM v8]
+ * [wikipedia:PowerPC:] für [wikipedia_en:POWER8:] und [wikipedia_en:POWER9:] CPUs
+ * [wikipedia:RISC-V:]
+ * [wikipedia:Z_Systems:IBM System z]
+
+Alle Images sind auf der [https://cdimage.ubuntu.com/releases/ englischen Ubuntu Download-Seite] {dl} zu finden.
+
+Wer Ubuntu-Images für mobile Endgeräte, wie Smartphones oder Tabletts sucht, findet im Artikel [:Ubuntu_Touch/UBports_Installer:Ubuntu Touch UBports Installer] weitere Informationen.
+
+= Nach dem Herunterladen =
+== Prüfsumme kontrollieren ==
+Anhand eines Vergleichs der Prüfsumme (checksum) der direkt heruntergeladenen Datei (dem ISO-Abbild) und der „Soll-Prüfsumme“ sollte vor dem Brennen auf DVD oder der Übertragung auf einen USB-Stick geprüft werden, ob die Datei wirklich fehlerfrei und in Ordnung ist. Die Prüfsumme des ISO-Abbilds muss mit der selbst ermittelten exakt übereinstimmen.
+
+ * Wer bereits ''Ubuntu oder eine andere Linux-Version'' installiert hat, kann dazu [:Hashfunktionen/#Kryptografische-Hashs:sha256sum] verwenden.
+ * ''Windows''-Nutzer können beispielsweise das Open Source Programm [github:gurnec/HashCheck/releases:HashCheck] {en} nutzen, welches den Explorer um eine Funktion zur Prüfung der Checksumme erweitert.
+ * Unter ''Mac OS X'' hilft der Befehl `shasum -a 256 DATEI.iso` weiter.
+ * Weiterhin kann man die Integrität der heruntergeladenen ISO-Datei überprüfen um sicherzustellen, dass diese und die entsprechende Prüfsummen nicht manipuliert wurden. Das Vorgehen ist im Wiki im Artikel [:Ubuntu-Downloads_überprüfen:] beschrieben.
+ * Außerdem kann sich die ''CD/DVD selbst'' (wenn man den Computer mit ihr startet)  überprüfen und so feststellen, ob man einen Rohling "verbrannt" hat (allerdings erst, wenn es schon zu spät ist...).
+
+== Installationsmedium erstellen ==
+Nach dem Download kann man die heruntergeladene ISO-Datei auf einen [:Live-USB:USB-Stick transferieren] oder auf eine DVD brennen. Unter [:Installation:] werden Schritt-für-Schritt Anleitungen zur Benutzung bereitgestellt und auch seltene Ausnahmefälle behandelt.
+
+Alternativ kann man auch [:Ventoy:] benutzen, welches den Start von mehreren als Datei gespeicherten ISO-Abbildern ermöglicht.
+
+= Links =
+ * Offizielle Download-Seiten:
+  * {*} [https://www.ubuntu.com/download Ubuntu] {en}
+  * Mate:
+   * [https://cdimages.ubuntu.com/ubuntu-mate/releases/ offizielle Images] {en} {dl}
+   * [ubuntumate:download:Ubuntu MATE] {en} Download Seite, wo auch speziell angepasste / experimentelle Images bereit stehen (z.B. für den Raspberry Pi)
+  * [kubuntu:getkubuntu:Kubuntu] {en}
+  * {l} [https://lubuntu.me/downloads/ Lubuntu] {en}
+  * [xubuntu:getxubuntu:Xubuntu] {en}
+  * [ubuntubudgie:downloads:Ubuntu Budgie] {en}
+  * [ubuntuunity:download:Ubuntu Unity] {en}
+  * [ubuntustudio:download:Ubuntu Studio] {en}
+  * [ubuntucinnamon:?page_id=438:Ubuntu Cinnamon] {en}
+  * [edubuntu:#download:Edubuntu] {en}
+
+#tag: Ubuntu, Installation
